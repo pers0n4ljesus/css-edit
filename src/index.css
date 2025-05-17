@@ -76,3 +76,13 @@ section {
   gap: 50px;
   height: min-content;
 }
+
+button {
+  padding: 10px 40px;
+  margin: 20px 0px;
+  font-weight: 700;
+  background-color: cadetblue;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}

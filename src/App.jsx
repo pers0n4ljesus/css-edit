@@ -24,6 +24,13 @@ export default function App() {
       ))
     });
   };
+
+  function copyCss() {
+    navigator.clipboard.writeText("background-color: " + styles)
+      .then(() => alert("Copied CSS style - background-color: " + styles))
+      .catch(err => console.error("Error copying", err));
+  }
+
   return (
     <main>
       <div className="css-edit-box"
@@ -32,6 +39,8 @@ export default function App() {
         }}>
         Mess around with this box!
       </div>
+      <button 
+        onClick={copyCss}>Copy CSS Property</button>
       <hr />
       <section>
       <div className="named-container">
